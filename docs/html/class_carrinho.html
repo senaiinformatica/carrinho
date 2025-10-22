@@ -1,0 +1,738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carrinho Omni: Referência da Classe Carrinho</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carrinho Omni<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Seguidor de linha com rodas omni e PID para ESP32</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_carrinho.html','','class_carrinho-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência da Classe Carrinho</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe principal de controle do carrinho.  
+ <a href="#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="carrinho_8h_source.html">carrinho.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Diagrama de colaboração para Carrinho:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:a75364714a5700f01bc05cc1ef5ba3828" id="r_a75364714a5700f01bc05cc1ef5ba3828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75364714a5700f01bc05cc1ef5ba3828">begin</a> ()</td></tr>
+<tr class="memdesc:a75364714a5700f01bc05cc1ef5ba3828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa LUTs, PWM dos motores e temporizador interno.  <br /></td></tr>
+<tr class="memitem:a799ff82e0bce359300567807f63be4a4" id="r_a799ff82e0bce359300567807f63be4a4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a799ff82e0bce359300567807f63be4a4">calcularDt</a> ()</td></tr>
+<tr class="memdesc:a799ff82e0bce359300567807f63be4a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula dt automaticamente a partir de micros.  <br /></td></tr>
+<tr class="memitem:adc664224dac5cfbd6047daf964d8af47" id="r_adc664224dac5cfbd6047daf964d8af47"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc664224dac5cfbd6047daf964d8af47">calcularErroMascara</a> (uint8_t m)</td></tr>
+<tr class="memdesc:adc664224dac5cfbd6047daf964d8af47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converte uma máscara de 8 bits em erro usando a LUT.  <br /></td></tr>
+<tr class="memitem:af302ad51e3e12b8652d5579cefc651e2" id="r_af302ad51e3e12b8652d5579cefc651e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af302ad51e3e12b8652d5579cefc651e2">Carrinho</a> (Adafruit_MCP23X17 &amp;mcp_dev)</td></tr>
+<tr class="memdesc:af302ad51e3e12b8652d5579cefc651e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor.  <br /></td></tr>
+<tr class="memitem:abb7a8059f20f519a1316bd1a028b661d" id="r_abb7a8059f20f519a1316bd1a028b661d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb7a8059f20f519a1316bd1a028b661d">controlarRodas</a> (float vy, float vx, float omega)</td></tr>
+<tr class="memdesc:abb7a8059f20f519a1316bd1a028b661d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controla as rodas em percentuais de -100 a 100.  <br /></td></tr>
+<tr class="memitem:acc91ea7e1d1c14b15feaabe8ff8a25f7" id="r_acc91ea7e1d1c14b15feaabe8ff8a25f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc91ea7e1d1c14b15feaabe8ff8a25f7">entrarCalibracao</a> ()</td></tr>
+<tr class="memdesc:acc91ea7e1d1c14b15feaabe8ff8a25f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entra no modo de calibração.  <br /></td></tr>
+<tr class="memitem:abf9b0a127cda1cfb04fd3de3c19176e7" id="r_abf9b0a127cda1cfb04fd3de3c19176e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf9b0a127cda1cfb04fd3de3c19176e7">iniciarSeguirLinha</a> ()</td></tr>
+<tr class="memdesc:abf9b0a127cda1cfb04fd3de3c19176e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepara o seguidor para iniciar.  <br /></td></tr>
+<tr class="memitem:ab5145ed05e1e0dc5358afe3d4476f507" id="r_ab5145ed05e1e0dc5358afe3d4476f507"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5145ed05e1e0dc5358afe3d4476f507">lerErro</a> ()</td></tr>
+<tr class="memdesc:ab5145ed05e1e0dc5358afe3d4476f507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lê a máscara e devolve o erro do seguidor.  <br /></td></tr>
+<tr class="memitem:aa64c0da1fa33593ffbb64fd3c10dc5c3" id="r_aa64c0da1fa33593ffbb64fd3c10dc5c3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa64c0da1fa33593ffbb64fd3c10dc5c3">lerLinhaMascara</a> ()</td></tr>
+<tr class="memdesc:aa64c0da1fa33593ffbb64fd3c10dc5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lê a máscara dos 8 sensores no banco A do MCP (A0..A7).  <br /></td></tr>
+<tr class="memitem:af4a46e4bf4f5090419eb3209a7a4fee0" id="r_af4a46e4bf4f5090419eb3209a7a4fee0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4a46e4bf4f5090419eb3209a7a4fee0">pidAtualizar</a> (float erro, float dt)</td></tr>
+<tr class="memdesc:af4a46e4bf4f5090419eb3209a7a4fee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atualiza o controlador PID e devolve o comando angular.  <br /></td></tr>
+<tr class="memitem:a2fb96cbcc307a363ed0a066605e92302" id="r_a2fb96cbcc307a363ed0a066605e92302"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fb96cbcc307a363ed0a066605e92302">seguirLinhaStep</a> ()</td></tr>
+<tr class="memdesc:a2fb96cbcc307a363ed0a066605e92302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa um passo de seguir linha independente da FSM.  <br /></td></tr>
+<tr class="memitem:ad5ae831653d18669b3cf74ed59f55e1f" id="r_ad5ae831653d18669b3cf74ed59f55e1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5ae831653d18669b3cf74ed59f55e1f">setPID</a> (float p, float i, float d)</td></tr>
+<tr class="memdesc:ad5ae831653d18669b3cf74ed59f55e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define os ganhos do PID garantindo não negatividade.  <br /></td></tr>
+<tr class="memitem:ad588afed569887e8aa58e7f56f51316d" id="r_ad588afed569887e8aa58e7f56f51316d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad588afed569887e8aa58e7f56f51316d">tick</a> ()</td></tr>
+<tr class="memdesc:ad588afed569887e8aa58e7f56f51316d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa um ciclo completo de atualização.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a26a2bd6f80625e07455b27f62ab87b92" id="r_a26a2bd6f80625e07455b27f62ab87b92"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26a2bd6f80625e07455b27f62ab87b92">detectaCentro</a> (uint8_t m)</td></tr>
+<tr class="memdesc:a26a2bd6f80625e07455b27f62ab87b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecta se os dois sensores centrais estão ativos.  <br /></td></tr>
+<tr class="memitem:a8d08ffa91206f88f5ab5760b46d27635" id="r_a8d08ffa91206f88f5ab5760b46d27635"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d08ffa91206f88f5ab5760b46d27635">verificaBloco</a> (uint8_t m, bool direita, uint8_t qnt)</td></tr>
+<tr class="memdesc:a8d08ffa91206f88f5ab5760b46d27635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica um bloco ancorado nas bordas com quantidade mínima de sensores ativos.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Classe principal de controle do carrinho. </p>
+<dl class="section note"><dt>Observação</dt><dd>O objeto recebe uma referência a um MCP23X17 já inicializado fora da classe. </dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>Este módulo não configura o MCP23X17. Faça a configuração no seu setup. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8h_source.html#l00028">28</a> do arquivo <a class="el" href="carrinho_8h_source.html">carrinho.h</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Construtores e Destrutores</h2>
+<a id="af302ad51e3e12b8652d5579cefc651e2" name="af302ad51e3e12b8652d5579cefc651e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af302ad51e3e12b8652d5579cefc651e2">&#9670;&#160;</a></span>Carrinho()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Carrinho::Carrinho </td>
+          <td>(</td>
+          <td class="paramtype">Adafruit_MCP23X17 &amp;</td>          <td class="paramname"><span class="paramname"><em>mcp_dev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construtor. </p>
+<p>Constrói um carrinho acoplando a instância do expansor I2C.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mcp_dev</td><td>referência para um Adafruit_MCP23X17 já iniciado externamente.</td></tr>
+    <tr><td class="paramname">mcp_dev</td><td>referência para um Adafruit_MCP23X17 já configurado externamente. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Observação</dt><dd>Este módulo não inicializa o MCP. A turma pode exercitar a configuração no setup do projeto. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00034">34</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a75364714a5700f01bc05cc1ef5ba3828" name="a75364714a5700f01bc05cc1ef5ba3828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75364714a5700f01bc05cc1ef5ba3828">&#9670;&#160;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Carrinho::begin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa LUTs, PWM dos motores e temporizador interno. </p>
+<p>Inicializa LUT do seguidor, motores e temporizador.</p>
+<dl class="section post"><dt>Pós-condição</dt><dd>Estado inicial é CALIBRACAO.</dd></dl>
+<p>Entra em CALIBRACAO. </p><dl class="section note"><dt>Observação</dt><dd>A configuração do MCP fica a cargo do programa principal dos alunos. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00712">712</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a799ff82e0bce359300567807f63be4a4" name="a799ff82e0bce359300567807f63be4a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a799ff82e0bce359300567807f63be4a4">&#9670;&#160;</a></span>calcularDt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Carrinho::calcularDt </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcula dt automaticamente a partir de micros. </p>
+<p>Calcula automaticamente dt usando micros e atualiza o relógio interno.</p>
+<dl class="section return"><dt>Retorna</dt><dd>dt em segundos limitado por faixa segura.</dd>
+<dd>
+dt em segundos já limitado por clampDt. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00057">57</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adc664224dac5cfbd6047daf964d8af47" name="adc664224dac5cfbd6047daf964d8af47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc664224dac5cfbd6047daf964d8af47">&#9670;&#160;</a></span>calcularErroMascara()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Carrinho::calcularErroMascara </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converte uma máscara de 8 bits em erro usando a LUT. </p>
+<p>Converte uma mascara em erro usando a LUT construída.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>máscara de 8 bits dos sensores. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Erro float ou ERRO_SEM_LINHA quando não há sensores ativos.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>mascara de 8 bits. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>erro em ponto flutuante ou ERRO_SEM_LINHA quando não há faixa. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00370">370</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+<p class="reference">Referenciado(a) por <a class="el" href="carrinho_8cpp_source.html#l00381">lerErro()</a> e <a class="el" href="carrinho_8cpp_source.html#l00724">tick()</a>.</p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Esse é o diagrama das funções que utilizam essa função:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+
+</div>
+</div>
+<a id="abb7a8059f20f519a1316bd1a028b661d" name="abb7a8059f20f519a1316bd1a028b661d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7a8059f20f519a1316bd1a028b661d">&#9670;&#160;</a></span>controlarRodas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Carrinho::controlarRodas </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>omega</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Controla as rodas em percentuais de -100 a 100. </p>
+<p>Interface de alto nível para comandar rodas em percentuais.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vy</td><td>velocidade frontal em porcentagem. </td></tr>
+    <tr><td class="paramname">vx</td><td>velocidade lateral em porcentagem. </td></tr>
+    <tr><td class="paramname">omega</td><td>rotação em porcentagem. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Observação</dt><dd>Valores fora da faixa são limitados internamente.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vy</td><td>avanço frontal [-100..100]. </td></tr>
+    <tr><td class="paramname">vx</td><td>deslocamento lateral [-100..100]. </td></tr>
+    <tr><td class="paramname">omega</td><td>rotação [-100..100]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00545">545</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+<p class="reference">Referenciado(a) por <a class="el" href="carrinho_8cpp_source.html#l00679">seguirLinhaStep()</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Esse é o diagrama das funções que utilizam essa função:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 2 --></div>
+</div>
+
+</div>
+</div>
+<a id="a26a2bd6f80625e07455b27f62ab87b92" name="a26a2bd6f80625e07455b27f62ab87b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a2bd6f80625e07455b27f62ab87b92">&#9670;&#160;</a></span>detectaCentro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Carrinho::detectaCentro </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detecta se os dois sensores centrais estão ativos. </p>
+<p>Detecta se os sensores centrais estão ativos.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>máscara de sensores. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se os bits centrais estão ligados.</dd></dl>
+<p>Serve como gatilho de largada. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>mascara de sensores. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>verdadeiro quando os dois bits centrais estão ativos. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00781">781</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acc91ea7e1d1c14b15feaabe8ff8a25f7" name="acc91ea7e1d1c14b15feaabe8ff8a25f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc91ea7e1d1c14b15feaabe8ff8a25f7">&#9670;&#160;</a></span>entrarCalibracao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Carrinho::entrarCalibracao </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Entra no modo de calibração. </p>
+<p>Entra no modo de calibração, limpando estados do PID.</p>
+<dl class="section post"><dt>Pós-condição</dt><dd>Zera integrador e derivada e para os motores. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00657">657</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abf9b0a127cda1cfb04fd3de3c19176e7" name="abf9b0a127cda1cfb04fd3de3c19176e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9b0a127cda1cfb04fd3de3c19176e7">&#9670;&#160;</a></span>iniciarSeguirLinha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Carrinho::iniciarSeguirLinha </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepara o seguidor para iniciar. </p>
+<p>Prepara o seguidor para iniciar: vai para ESPERANDO_LARGADA e zera integradores.</p>
+<dl class="section post"><dt>Pós-condição</dt><dd>Estado muda para ESPERANDO_LARGADA e zera integrador. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00668">668</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab5145ed05e1e0dc5358afe3d4476f507" name="ab5145ed05e1e0dc5358afe3d4476f507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5145ed05e1e0dc5358afe3d4476f507">&#9670;&#160;</a></span>lerErro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Carrinho::lerErro </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lê a máscara e devolve o erro do seguidor. </p>
+<p>Lê a mascara dos sensores e devolve o erro.</p>
+<dl class="section return"><dt>Retorna</dt><dd>Erro em faixa aproximada [-7..7] ou ERRO_SEM_LINHA se não houver faixa. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00381">381</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+<p class="reference">Referencias <a class="el" href="carrinho_8cpp_source.html#l00370">calcularErroMascara()</a> e <a class="el" href="carrinho_8cpp_source.html#l00359">lerLinhaMascara()</a>.</p>
+
+<p class="reference">Referenciado(a) por <a class="el" href="carrinho_8cpp_source.html#l00679">seguirLinhaStep()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Este é o diagrama das funções utilizadas por essa função:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 3 --></div>
+</div>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Esse é o diagrama das funções que utilizam essa função:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 4 --></div>
+</div>
+
+</div>
+</div>
+<a id="aa64c0da1fa33593ffbb64fd3c10dc5c3" name="aa64c0da1fa33593ffbb64fd3c10dc5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa64c0da1fa33593ffbb64fd3c10dc5c3">&#9670;&#160;</a></span>lerLinhaMascara()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Carrinho::lerLinhaMascara </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lê a máscara dos 8 sensores no banco A do MCP (A0..A7). </p>
+<p>Lê GPIOA do MCP e retorna apenas os 8 bits da linha.</p>
+<dl class="section return"><dt>Retorna</dt><dd>Máscara de 8 bits. Bit 1 indica sensor ativo conforme PRETO_BIT_1.</dd>
+<dd>
+máscara de 8 bits dos sensores. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00359">359</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+<p class="reference">Referenciado(a) por <a class="el" href="carrinho_8cpp_source.html#l00381">lerErro()</a> e <a class="el" href="carrinho_8cpp_source.html#l00724">tick()</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Esse é o diagrama das funções que utilizam essa função:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 5 --></div>
+</div>
+
+</div>
+</div>
+<a id="af4a46e4bf4f5090419eb3209a7a4fee0" name="af4a46e4bf4f5090419eb3209a7a4fee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a46e4bf4f5090419eb3209a7a4fee0">&#9670;&#160;</a></span>pidAtualizar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Carrinho::pidAtualizar </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>erro</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atualiza o controlador PID e devolve o comando angular. </p>
+<p>Atualiza o controlador PID e retorna o comando angular.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">erro</td><td>erro do seguidor. Sinal indica lado. </td></tr>
+    <tr><td class="paramname">dt</td><td>intervalo de tempo em segundos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>omega limitado a [-omegaMax..omegaMax].</dd></dl>
+<p>P: kp * erro I: acumula erro * dt com anti windup D: (erro - erroAnterior) / dt com proteção contra dt muito pequeno</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">erro</td><td>erro do seguidor de linha. Sinal indica lado. </td></tr>
+    <tr><td class="paramname">dt</td><td>intervalo de tempo em segundos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>omega limitado a [-omegaMax..omegaMax].</dd></dl>
+<p>P: kp * erro I: integra erro*dt com anti windup por saturação de integral D: derivada simples (erro - erroAnterior) / dt </p><dl class="section note"><dt>Observação</dt><dd>Anti windup limita a integral em função de ki para prevenir saturação. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00566">566</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+<p class="reference">Referenciado(a) por <a class="el" href="carrinho_8cpp_source.html#l00679">seguirLinhaStep()</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Esse é o diagrama das funções que utilizam essa função:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 6 --></div>
+</div>
+
+</div>
+</div>
+<a id="a2fb96cbcc307a363ed0a066605e92302" name="a2fb96cbcc307a363ed0a066605e92302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb96cbcc307a363ed0a066605e92302">&#9670;&#160;</a></span>seguirLinhaStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Carrinho::seguirLinhaStep </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Executa um passo de seguir linha independente da FSM. </p>
+<p>Executa um passo do seguidor independente da FSM externa.</p>
+<p>Útil se você quiser chamar o seguidor em um loop próprio.</p>
+<dl class="section note"><dt>Observação</dt><dd>Útil quando se deseja chamar a lógica de seguir linha em um loop próprio. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00679">679</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+<p class="reference">Referencias <a class="el" href="carrinho_8cpp_source.html#l00545">controlarRodas()</a>, <a class="el" href="carrinho_8cpp_source.html#l00381">lerErro()</a> e <a class="el" href="carrinho_8cpp_source.html#l00566">pidAtualizar()</a>.</p>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Este é o diagrama das funções utilizadas por essa função:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 7 --></div>
+</div>
+
+</div>
+</div>
+<a id="ad5ae831653d18669b3cf74ed59f55e1f" name="ad5ae831653d18669b3cf74ed59f55e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ae831653d18669b3cf74ed59f55e1f">&#9670;&#160;</a></span>setPID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Carrinho::setPID </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>i</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>d</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define os ganhos do PID garantindo não negatividade. </p>
+<p>Ajusta os ganhos do PID garantindo não negatividade.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>ganho proporcional. </td></tr>
+    <tr><td class="paramname">i</td><td>ganho integral. </td></tr>
+    <tr><td class="paramname">d</td><td>ganho derivativo.</td></tr>
+    <tr><td class="paramname">p</td><td>ganho proporcional. </td></tr>
+    <tr><td class="paramname">i</td><td>ganho integral. </td></tr>
+    <tr><td class="paramname">d</td><td>ganho derivativo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Observação</dt><dd>Valores negativos são fixados em zero para evitar comportamento estranho. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00140">140</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad588afed569887e8aa58e7f56f51316d" name="ad588afed569887e8aa58e7f56f51316d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad588afed569887e8aa58e7f56f51316d">&#9670;&#160;</a></span>tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Carrinho::tick </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Executa um ciclo completo de atualização. </p>
+<p>Deve ser chamada no loop principal.</p>
+<p>Processa comandos seriais, calcula dt, lê sensores e roda a máquina de estados. Deve ser chamada continuamente no loop principal.</p>
+<p>Processa serial, atualiza dt, lê sensores e executa a FSM. </p>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00724">724</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+<p class="reference">Referencias <a class="el" href="carrinho_8cpp_source.html#l00370">calcularErroMascara()</a> e <a class="el" href="carrinho_8cpp_source.html#l00359">lerLinhaMascara()</a>.</p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Este é o diagrama das funções utilizadas por essa função:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 8 --></div>
+</div>
+
+</div>
+</div>
+<a id="a8d08ffa91206f88f5ab5760b46d27635" name="a8d08ffa91206f88f5ab5760b46d27635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d08ffa91206f88f5ab5760b46d27635">&#9670;&#160;</a></span>verificaBloco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Carrinho::verificaBloco </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>direita</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>qnt</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verifica um bloco ancorado nas bordas com quantidade mínima de sensores ativos. </p>
+<p>Verifica a presença de um bloco com ao menos qnt sensores ativos ancorados na borda esquerda ou direita.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>máscara de sensores. </td></tr>
+    <tr><td class="paramname">direita</td><td>se true ancora do lado direito, senão do lado esquerdo. </td></tr>
+    <tr><td class="paramname">qnt</td><td>quantidade mínima de sensores ativos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true quando o padrão é atendido.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>mascara de sensores. </td></tr>
+    <tr><td class="paramname">direita</td><td>se verdadeiro ancora na direita, senão na esquerda. </td></tr>
+    <tr><td class="paramname">qnt</td><td>quantidade mínima de sensores ativos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>verdadeiro quando o padrão é atendido. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="carrinho_8cpp_source.html#l00771">771</a> do arquivo <a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li><a class="el" href="carrinho_8h_source.html">carrinho.h</a></li>
+<li><a class="el" href="carrinho_8cpp_source.html">carrinho.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_carrinho.html">Carrinho</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+digraph "Carrinho::calcularErroMascara"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Carrinho::calcularErroMascara",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Converte uma máscara de 8 bits em erro usando a LUT."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Carrinho::lerErro",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_carrinho.html#ab5145ed05e1e0dc5358afe3d4476f507",tooltip="Lê a máscara e devolve o erro do seguidor."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Carrinho::seguirLinhaStep",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_carrinho.html#a2fb96cbcc307a363ed0a066605e92302",tooltip="Executa um passo de seguir linha independente da FSM."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Carrinho::tick",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_carrinho.html#ad588afed569887e8aa58e7f56f51316d",tooltip="Executa um ciclo completo de atualização."];
+}
