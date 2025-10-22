@@ -36,11 +36,39 @@ public:
 
 
 
-  /** Define as velocidades base (%): avanço (vy) e lateral (vx). */
+/**
+ * @brief Define as velocidades base de deslocamento do carrinho.
+ * @param vy Velocidade de avanço (frente), em percentual de 0 a 100.
+ * @param vx Velocidade lateral (esquerda/direita), em percentual de -100 a 100.
+ * @details
+ * Este método ajusta as velocidades de referência utilizadas pelo seguidor de linha.
+ * A velocidade de avanço (`vy`) controla o deslocamento para frente,
+ * enquanto a velocidade lateral (`vx`) pode compensar desalinhamentos ou deslocamentos laterais.
+ * Ambos os valores são automaticamente limitados aos intervalos válidos.
+ * @note Alterar essas velocidades afeta o comportamento de `seguirLinhaStep()`
+ * e dos modos automáticos de corrida.
+ */
 void setVelocidades(float vy, float vx);
-/** Define apenas a velocidade de avanço (0..100%). */
+
+/**
+ * @brief Define apenas a velocidade base de avanço (eixo Y).
+ * @param vy Velocidade de avanço em percentual (0 a 100).
+ * @details
+ * Ajusta a velocidade frontal padrão usada pelo seguidor de linha.
+ * O valor é limitado entre 0 e 100 %, evitando movimento reverso.
+ * @see setVelocidades()
+ */
 void setVy(float vy);
-/** Define apenas a velocidade lateral (-100..100%). */
+
+/**
+ * @brief Define apenas a velocidade base lateral (eixo X).
+ * @param vx Velocidade lateral em percentual (-100 a 100).
+ * @details
+ * Controla o deslocamento lateral constante aplicado ao carrinho durante o seguimento da linha.
+ * Pode ser usado para corrigir pequenos desvios ou testar movimentações diagonais.
+ * @note Valores positivos deslocam o carrinho para a direita, negativos para a esquerda.
+ * @see setVelocidades()
+ */
 void setVx(float vx);
   // ========================= Ciclo de vida =========================
 
@@ -230,8 +258,8 @@ private:
   float erroAnterior = 0.0f;
   /// Acumulador da integral com anti windup.
   float integralAcumulada = 0.0f;
-
-  float vxPercent = 0.0f;   // deslocamento lateral base (-100..100)
+// deslocamento lateral base (-100..100)
+  float vxPercent = 0.0f;   
  
   /// ========================= Filtros =========================
   /// Filtro passa-baixa para a derivada do PID.

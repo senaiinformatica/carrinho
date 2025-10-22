@@ -1,101 +1,79 @@
-# =================== IDENTIDADE DO PROJETO ===================
+# ====== Projeto / idioma / encoding ======
 PROJECT_NAME                = "Carrinho Omni"
-PROJECT_NUMBER              = 1.0.0                # versão exibida na doc
 PROJECT_BRIEF               = "Seguidor de linha com rodas omni e PID para ESP32"
-OUTPUT_DIRECTORY            = docs                 # onde gerar a doc (html vai em docs/html)
-OUTPUT_LANGUAGE             = Brazilian            # idioma das mensagens/labels
-INPUT_ENCODING              = UTF-8                # encoding do código-fonte e comentários
+OUTPUT_DIRECTORY            = docs
+OUTPUT_LANGUAGE             = Brazilian
+INPUT_ENCODING              = UTF-8
 
-# Usa um README.md como página inicial (se existir na raiz)
+# Use um README.md como página inicial (opcional)
+# Coloque um README.md na raiz do projeto
 USE_MDFILE_AS_MAINPAGE      = README.md
 
-# =================== ENTRADAS / ESCOPO ===================
-INPUT                       = include src          # pastas onde estão headers e fontes
-RECURSIVE                   = YES                  # varrer subpastas
+# ====== Entrada ======
+INPUT                       = include src
+RECURSIVE                   = YES
 FILE_PATTERNS               = *.h *.hpp *.c *.cpp *.md
-EXCLUDE_PATTERNS            = */.pio/* */.git/* */build/* # ignora gerados do PlatformIO e build
+EXCLUDE_PATTERNS            = */.pio/* */.git/* */build/*
 
-FULL_PATH_NAMES             = NO                   # títulos de arquivo sem caminho absoluto
-STRIP_FROM_PATH             = .                    # remove este prefixo dos caminhos exibidos
+# Mostra caminhos curtos nos títulos
+FULL_PATH_NAMES             = NO
+STRIP_FROM_PATH             = .
 
-# =================== EXTRAÇÃO / ESTILO ===================
-EXTRACT_ALL                 = NO                   # só documenta o que tiver comentário Doxygen
-EXTRACT_PRIVATE             = NO                   # não incluir membros privados por padrão
-EXTRACT_STATIC              = YES                  # incluir funções/atributos estáticos
-EXTRACT_LOCAL_CLASSES       = YES                  # classes definidas dentro de funções
-JAVADOC_AUTOBRIEF           = YES                  # primeira linha vira @brief automaticamente
-MULTILINE_CPP_IS_BRIEF      = YES                  # permite brief multi-linha
-QT_AUTOBRIEF                = YES                  # sintaxe estilo /// compatível
-OPTIMIZE_OUTPUT_FOR_C       = NO                   # é C++, então deixa NO
+# ====== Extração / Estilo de comentário ======
+EXTRACT_ALL                 = NO
+EXTRACT_PRIVATE             = NO
+EXTRACT_STATIC              = YES
+EXTRACT_LOCAL_CLASSES       = YES
+JAVADOC_AUTOBRIEF           = YES
+MULTILINE_CPP_IS_BRIEF      = YES
+QT_AUTOBRIEF                = YES
+OPTIMIZE_OUTPUT_FOR_C       = NO
 
-SORT_MEMBER_DOCS            = YES                  # ordena membros/documentação
+# Ordenações úteis
+SORT_MEMBER_DOCS            = YES
 SORT_BRIEF_DOCS             = YES
 SORT_BY_SCOPE_NAME          = YES
 
-# =================== AVISOS / QA ===================
+# ====== Avisos ======
 WARNINGS                    = YES
-WARN_IF_UNDOCUMENTED        = YES                  # alerta o que ficou sem doc
-WARN_IF_DOC_ERROR           = YES                  # alerta erros de doc
+WARN_IF_UNDOCUMENTED        = YES
+WARN_IF_DOC_ERROR           = YES
 QUIET                       = NO
 
-# =================== HTML / UI ===================
+# ====== HTML ======
 GENERATE_HTML               = YES
 HTML_OUTPUT                 = html
-GENERATE_TREEVIEW           = YES                  # menu lateral com árvore
-SEARCHENGINE                = YES                  # caixa de busca
-HTML_DYNAMIC_SECTIONS       = YES                  # colapsar/expandir seções
-HTML_COLORSTYLE_HUE         = 200                  # tom de cor do tema padrão
+GENERATE_TREEVIEW           = YES
+SEARCHENGINE                = YES
+HTML_DYNAMIC_SECTIONS       = YES
+# Cor de tema (só cosmético)
+HTML_COLORSTYLE_HUE         = 200
 
-# ---- Personalização visual ----
-PROJECT_LOGO                = docs/assets/logo.png # exibe logo no cabeçalho
-HTML_FAVICON                = docs/assets/favicon.ico  # ícone da aba (ou .png)
+# ====== LaTeX / PDF (desligado aqui) ======
+GENERATE_LATEX              = NO
 
-# Arquivos extra a serem copiados para a pasta de saída (assets, css, imagens)
-HTML_EXTRA_FILES            = docs/assets/logo.png \
-                              docs/assets/favicon.ico \
-                              docs/assets/custom.css
+# ====== Código-fonte / Navegação ======
+SOURCE_BROWSER              = YES
+INLINE_SOURCES              = NO
+REFERENCED_BY_RELATION      = YES
+REFERENCES_RELATION         = YES
+VERBATIM_HEADERS            = YES
 
-# CSS extra para customizar a aparência (opcional, crie o arquivo)
-HTML_EXTRA_STYLESHEET       = docs/assets/custom.css
-
-# Cabeçalho/rodapé HTML customizados (opcionais; precisam ser HTML completo)
-# HTML_HEADER               = docs/assets/header.html
-# HTML_FOOTER               = docs/assets/footer.html
-
-# =================== LaTeX / PDF ===================
-GENERATE_LATEX              = NO                   # desligado (ligue se for gerar PDF)
-# Se quiser PDF: mude para YES e depois rode 'make' dentro de docs/latex (requer LaTeX)
-
-# =================== CÓDIGO-FONTE / NAVEGAÇÃO ===================
-SOURCE_BROWSER              = YES                  # mostra o código-fonte navegável (lindo pra aulas)
-INLINE_SOURCES              = NO                   # mostra fonte embutido na página da entidade
-VERBATIM_HEADERS            = YES                  # inclui headers “como são”
-REFERENCED_BY_RELATION      = YES                  # “quem me chama”
-REFERENCES_RELATION         = YES                  # “quem eu chamo”
-
-# =================== MARKDOWN / LINKS ===================
+# ====== Markdown ======
 MARKDOWN_SUPPORT            = YES
-AUTOLINK_SUPPORT            = YES                  # links automáticos para símbolos conhecidos
+AUTOLINK_SUPPORT            = YES
 
-# =================== PRÉ-PROCESSAMENTO (C/C++) ===================
-ENABLE_PREPROCESSING        = YES                  # roda o pré-processador (útil com #defines)
-MACRO_EXPANSION             = NO                   # expandir macros pode confundir; deixe NO
+# ====== Preprocessamento (para C/C++) ======
+ENABLE_PREPROCESSING        = YES
+MACRO_EXPANSION             = NO
 EXPAND_ONLY_PREDEF          = NO
-# PREDEFINED                = ARDUINO=1 ESP32=1    # defina símbolos se necessário para condicional
 
-# =================== DIAGRAMAS (Graphviz) ===================
-HAVE_DOT                    = YES                  # requer graphviz instalado (dot)
-CLASS_DIAGRAMS              = YES                  # diagramas de classe
-UML_LOOK                    = YES                  # estilo mais “UML”
-CALL_GRAPH                  = YES                  # grafo de chamadas (quem eu chamo)
-CALLER_GRAPH                = YES                  # grafo inverso (quem me chama)
-DOT_IMAGE_FORMAT            = svg                  # SVG fica nítido e leve
+# ====== Diagramas (Graphviz) ======
+HAVE_DOT                    = YES
+CLASS_DIAGRAMS              = YES
+UML_LOOK                    = YES
+CALL_GRAPH                  = YES
+CALLER_GRAPH                = YES
+DOT_IMAGE_FORMAT            = svg
 DOT_TRANSPARENT             = YES
-DOT_GRAPH_MAX_NODES         = 50                   # limita tamanho dos grafos (evita bagunça)
-
-# =================== PERFORMANCE / GERAL ===================
-ALPHABETICAL_INDEX          = YES                  # índice A-Z
-TAB_SIZE                    = 2                    # tabs viram 2 espaços no render
-GENERATE_TESTLIST           = NO
-GENERATE_BUGLIST            = NO
-GENERATE_DEPRECATIONLIST    = YES
+DOT_GRAPH_MAX_NODES         = 50

@@ -13,6 +13,9 @@ var class_carrinho =
     [ "pidAtualizar", "class_carrinho.html#af4a46e4bf4f5090419eb3209a7a4fee0", null ],
     [ "seguirLinhaStep", "class_carrinho.html#a2fb96cbcc307a363ed0a066605e92302", null ],
     [ "setPID", "class_carrinho.html#ad5ae831653d18669b3cf74ed59f55e1f", null ],
+    [ "setVelocidades", "class_carrinho.html#a87fb25ffdfc543f413f395f685c045d4", null ],
+    [ "setVx", "class_carrinho.html#a08a560b3fe1f9b019f752a3aecb35f77", null ],
+    [ "setVy", "class_carrinho.html#ad92c67e03a72de67367132a3ec986b68", null ],
     [ "tick", "class_carrinho.html#ad588afed569887e8aa58e7f56f51316d", null ],
     [ "verificaBloco", "class_carrinho.html#a8d08ffa91206f88f5ab5760b46d27635", null ]
 ];
